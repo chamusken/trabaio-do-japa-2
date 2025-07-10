@@ -1,232 +1,114 @@
-:root{
-    --primary-color: #837316;
-    --secondayr-color: #b8e6e7;
-    --text-color: #000000;
-    --link-color: #fc0505;
-    --background-color: #FFFFFF;
-    --button-hover-color:#000000;
-    --font-body:"Chocolate Classical Sans", serif;
-    --font-titulo: "Rakkas", serif;
+:root {
+  --primary-color: #837316;
+  --secondary-color: #b8e6e7; /* Corrigido typo: secondayr → secondary */
+  --text-color: #000;
+  --link-color: #fc0505;
+  --background-color: #fff;
+  --button-hover-color: #000;
+  --font-body: "Chocolate Classical Sans", serif;
+  --font-titulo: "Rakkas", serif;
 }
-#container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    padding: 20px;
-    justify-content: space ;
-    margin-bottom: 80px;
-    flex-wrap: wrap;
+
+body {
+  background-image: url('img/library-background.jpg');
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 0;
 }
-.cabecalho{
-    padding: 5px;
-    background-color: rgba(255, 120, 120, 0.822);
-    border-radius: 10px;
-    font-size: 2vw;
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px;
+  justify-content: space-between; /* ajustado de space (incompleto) */
+  margin-bottom: 80px;
+  /* removi flex-wrap, pois grid já gerencia o fluxo */
 }
-.mudar{
-    color: rgb(17, 0, 255);
-    text-decoration: line-through;
-    font-weight: bold;
-    font-size: larger;
-}
-.cabecalho p{
-    color: #c99e4e;
-    text-decoration: line-through;
-}
-body{
-    background-image: url('img/library-background.jpg');
-    font-family: var(--font-body);
-}
-.design-conteudo{
-    padding: 5px;
-    border-radius: 5px;
-    border-color: #fffefe;
-    border-style: solid;
-    border-width: 1px;
-}
-.cartao1{
-    color: rgb(0, 38, 255);
-    padding: 5px;
-    background: linear-gradient(to bottom, rgb(0, 255, 255), rgba(88, 169, 235, 0.575));
-    border-radius: 5px;
-    border-color: #fff9f9;
-    border-style: solid;
-    border-width: 2px;
-    margin-top: 20px;
-    max-width: 300px;
-    transform-style: preserve-3d;
-    transition: transform 0.8s;
-    position: relative;
-    cursor: pointer;
-}
-.cartao2{
-    color: rgb(0, 81, 255);
-    padding: 5px;
-    background: linear-gradient(to bottom, rgb(0, 255, 255), rgba(88, 169, 235, 0.568));
-    border-radius: 5px;
-    border-color: #803f3f;
-    border-style: solid;
-    border-width: 2px;
-    margin-top: 20px;
-    max-width: 300px;
-    transform-style: preserve-3d;
-    transition: transform 0.8s;
-    position: relative;
-    cursor: pointer;
-}
-.cartao3{
-    color: rgb(0, 4, 255);
-    padding: 5px;
-    background: linear-gradient(to bottom, rgb(1, 255, 242), rgba(88, 169, 235, 0.61));
-    border-radius: 5px;
-    border-color: #ffffff;
-    border-style: solid;
-    border-width: 2px;
-    margin-top: 20px;
-    max-width: 300px;
-    transform-style: preserve-3d;
-    transition: transform 0.8s;
-    position: relative;
-    cursor: pointer;
-}
-.cartao4{
-    color: rgb(255, 255, 255);
-    padding: 5px;
-    background: linear-gradient(to bottom, rgb(0, 247, 255), rgba(88, 169, 235, 0.603));
-    border-radius: 5px;
-    border-color: #961313;
-    border-style: solid;
-    border-width: 2px;
-    margin-top: 20px;
-    max-width: 300px;
-    transform-style: preserve-3d;
-    transition: transform 0.8s;
-    position: relative;
-    cursor: pointer;
-}
-.cartao5{
-    color: rgb(255, 0, 170);
-    padding: 5px;
-    background: linear-gradient(to bottom, rgb(0, 255, 255), rgba(88, 169, 235, 0.548));
-    border-radius: 5px;
-    border-color: #40e929;
-    border-style: solid;
-    border-width: 2px;
-    margin-top: 20px;
-    max-width: 300px;
-    transform-style: preserve-3d;
-    transition: transform 0.8s;
-    position: relative;
-    cursor: pointer;
-}
-.cartao6{
-    color: rgb(255, 174, 0);
-    padding: 5px;
-    background: linear-gradient(to bottom, rgb(0, 255, 234), rgba(88, 169, 235, 0.555));
-    border-radius: 5px;
-    border-color: #000000;
-    border-style: solid;
-    border-width: 2px;
-    margin-top: 20px;
-    max-width: 300px;
-    transform-style: preserve-3d;
-    transition: transform 0.8s;
-    position: relative;
-    cursor: pointer;
-}
-.cartao7{
-    color: rgb(109, 18, 18);
-    padding: 5px;
-    background: linear-gradient(to bottom, rgb(2, 225, 255), rgba(88, 169, 235, 0.582));
-    border-radius: 5px;
-    border-color: #11abe7;
-    border-style: solid;
-    border-width: 2px;
-    margin-top: 20px;
-    max-width: 300px;
-    transform-style: preserve-3d;
-    transition: transform 0.8s;
-    position: relative;
-    cursor: pointer;
-}
-.cartao8{
-    color: rgba(0, 174, 255, 0.548);
-    padding: 5px;
-    background: linear-gradient(to bottom, rgb(3, 247, 255), rgba(125, 96, 192, 0.568));
-    border-radius: 5px;
-    border-color: #000000;
-    border-style: solid;
-    border-width: 2px;
-    margin-top: 20px;
-    max-width: 300px;
-    transform-style: preserve-3d;
-    transition: transform 0.8s;
-    position: relative;
-    cursor: pointer;
-}
-.cartao9{
-    color: rgb(64, 129, 93);
-    padding: 5px;
-    background: linear-gradient(to bottom, rgb(1, 255, 255), rgba(88, 169, 235, 0.596));
-    border-radius: 5px;
-    border-color: #000000;
-    border-style: solid;
-    border-width: 2px;
-    margin-top: 20px;
-    max-width: 300px;
-    transform-style: preserve-3d;
-    transition: transform 0.8s;
-    position: relative;
-    cursor: pointer;
-}
-.cartao.flipped .cartao2,
-.cartao.flipped .cartao1,
-.cartao.flipped .cartao3,
-.cartao.flipped .cartao4,
-.cartao.flipped .cartao5,
-.cartao.flipped .cartao6,
-.cartao.flipped .cartao7,
-.cartao.flipped .cartao8,
-.Cartão.flipped .Cartão9{
-    transform: rotateY(180deg);
-}
-.card-front, .card-back {
-  backface-visibility: hidden;
-  text-align: left;
+
+.cabecalho {
+  padding: 5px;
+  background-color: rgba(255, 120, 120, 0.822);
+  border-radius: 10px;
   font-size: 2vw;
 }
-.card-back {
-  transform: rotateY(180deg);
-  text-decoration: underline;
-  justify-content: flex-start;
+
+.cabecalho p {
+  color: #c99e4e;
+  text-decoration: line-through;
+}
+
+/* classe .mudar isolada — não esqueça de usá-la no HTML */
+.mudar {
+  color: rgb(17, 0, 255);
+  text-decoration: line-through;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.design-conteudo {
+  padding: 5px;
+  border: 1px solid #fffefe;
+  border-radius: 5px;
+}
+
+/* Estilizando os cartões via classe genérica + variação */
+.cartao {
+  padding: 5px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  margin-top: 20px;
+  max-width: 300px;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+  position: relative;
+  cursor: pointer;
+}
+
+.cartao .card-front,
+.cartao .card-back {
+  backface-visibility: hidden;
   overflow: hidden;
   word-wrap: break-word;
   line-height: 20px;
   font-size: 15px;
+  text-align: left;
 }
-.card-front{
-    word-wrap: break-word;
-    overflow: hidden;
-    line-height: 20px;
-    font-size: 15px;
+
+.cartao .card-back {
+  transform: rotateY(180deg);
+  text-decoration: underline;
 }
-footer{
-    padding: 5px;
-    background-color: #000000;
-    border-radius: 5px;
-    position: fixed;
-    margin-top: 20px;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    margin-top: 10px;
+
+.cartao.flipped {
+  transform: rotateY(180deg);
 }
-.texto-rodape{
-    color: #000000;
+
+/* Cores específicas por cartão */
+.cartao1 { color: rgb(0, 38, 255); border-color: #fff9f9; background: linear-gradient(to bottom, rgb(0,255,255), rgba(88,169,235,0.575)); }
+.cartao2 { color: rgb(0,81,255); border-color: #803f3f; background: linear-gradient(to bottom, rgb(0,255,255), rgba(88,169,235,0.568)); }
+.cartao3 { color: rgb(0,4,255); border-color: #ffffff; background: linear-gradient(to bottom, rgb(1,255,242), rgba(88,169,235,0.61)); }
+.cartao4 { color: rgb(255,255,255); border-color: #961313; background: linear-gradient(to bottom, rgb(0,247,255), rgba(88,169,235,0.603)); }
+.cartao5 { color: rgb(255,0,170); border-color: #40e929; background: linear-gradient(to bottom, rgb(0,255,255), rgba(88,169,235,0.548)); }
+.cartao6 { color: rgb(255,174,0); border-color: #000; background: linear-gradient(to bottom, rgb(0,255,234), rgba(88,169,235,0.555)); }
+.cartao7 { color: rgb(109,18,18); border-color: #11abe7; background: linear-gradient(to bottom, rgb(2,225,255), rgba(88,169,235,0.582)); }
+.cartao8 { color: rgba(0,174,255,0.548); border-color: #000; background: linear-gradient(to bottom, rgb(3,247,255), rgba(125,96,192,0.568)); }
+.cartao9 { color: rgb(64,129,93); border-color: #000; background: linear-gradient(to bottom, rgb(1,255,255), rgba(88,169,235,0.596)); }
+
+footer {
+  padding: 5px;
+  background-color: #000;
+  color: var(--text-color); /* texto do rodapé */
+  border-radius: 5px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
-.mark a{
-    color: rgb(75, 99, 99);
+.mark a {
+  color: rgb(75, 99, 99);
 }
-.mark a:hover{
-     color:rgb(107, 54, 112);
+.mark a:hover {
+  color: rgb(107, 54, 112);
 }
